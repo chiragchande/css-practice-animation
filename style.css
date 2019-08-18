@@ -1,3 +1,13 @@
+body{
+    /*background-color: #51557d;*/
+    background: url("./image.svg");
+
+    
+    object-position: top;
+    overflow: hidden;
+    object-fit: fill;
+} 
+
 .h1{
     background-color: #fc9803;
     text-align: center;
@@ -26,36 +36,339 @@
     }
 }
 .box1{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color: coral;
     position: relative;
     top: 50px;
-    left: 90px;
+    left: 20px;
     text-align: center;
     padding: 10px;
-    border-radius:50%;
+    border-radius: 20px;
 }
-.box1:hover{
-animation: 0.5s dot ease-in-out infinite alternate;
+ .box1:hover {
+    animation-name: background-color;
+    animation-duration: 1s;
 }
-@keyframes dot{
-    0%{
-        transform: scale(2);
-    }
+@keyframes background-color{
     100%{
-        transform: scale(4);
-    }
-}
+        background-color: #e3c1bf;
+    }  
+ } 
 
 
 .box2{
     height: 100px;
     width: 100px;
-    background-color: #8fb5f2;
+     background: linear-gradient(
+      35deg,
+      #33ccff,
+      #ff5050
+    );
     position: absolute;
-    top: 150px;
-    left: 180px;
+    top: 148px;
+    left: 250px;
     text-align: center;
     padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: #bb72f2;
+    position: absolute;
+    top: 148px;
+    left: 480px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+}
+@keyframes bounce{
+    0%{
+        top: 50;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: #6c736e;
+    position: absolute;
+    top: 148px;
+    left: 700px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+@keyframes blink{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color: #be7b70;
+    position: absolute;
+    top: 148px;
+    left: 950px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+@keyframes blink{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: #b3be74;
+    position: absolute;
+    top: 148px;
+    left: 1200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box7{
+    height: 100px;
+    width: 100px;
+    background-color: #a3cf72;
+    position: absolute;
+    top: 348px;
+    left: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+@keyframes slide{
+    0%{
+        top: 348px;
+    }
+    100%{
+        top: 400px;
+    }
+}
+
+.box8{
+    height: 100px;
+    width: 100px;
+    background-color: #4fc9a9;
+    position: absolute;
+    top: 348px;
+    left: 250px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+}
+@keyframes slide{
+    0%{
+        top: 348px;
+    }
+    100%{
+        top: 400px;
+    }
+}
+.box9{
+    height: 100px;
+    width: 100px;
+    background-color: #de6672;
+    position: absolute;
+    top: 348px;
+    left: 480px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: slide;
+     
+}
+
+
+.box10{
+    height: 100px;
+    width: 100px;
+    background-color: #416e39;
+    position: absolute;
+    top: 348px;
+    left: 700px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box11{
+    height: 100px;
+    width: 100px;
+    background-color: #e38f8f;
+    position: absolute;
+    top: 348px;
+    left: 950px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+@keyframes slider{
+    0%{
+        top: 348px;
+    }
+    100%{
+        top: 400px;
+    }
+}
+
+.box12{
+    height: 100px;
+    width: 100px;
+    background-color: #99b0ab;
+    position: absolute;
+    top: 348px;
+    left: 1200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+}
+@keyframes slider{
+    0%{
+        top: 348px;
+    }
+    100%{
+        top: 400px;
+    }
+}
+
+.box13{
+    height: 100px;
+    width: 100px;
+    background-color: #ba77bd;
+    position: absolute;
+    top: 548px;
+    left: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box14{
+    height: 100px;
+    width: 100px;
+    background-color: #d6b590;
+    position: absolute;
+    top: 548px;
+    left: 250px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box15{
+    height: 100px;
+    width: 100px;
+    background-color: #de9292;
+    position: absolute;
+    top: 548px;
+    left: 480px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box16{
+    height: 100px;
+    width: 100px;
+    background-color: #a0d9c5;
+    position: absolute;
+    top: 548px;
+    left: 700px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-duration: 2s;
+    animation-name: jump;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+@keyframes jump{
+    50%{
+        top: 100px;
+    }
+}
+
+.box17{
+    height: 100px;
+    width: 100px;
+    background-color: #50fc35;
+    position: absolute;
+    top: 548px;
+    left: 950px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+}
+@keyframes jump{
+    50%{
+        top: 100px;
+    }
+}
+.box18{
+    height: 100px;
+    width: 100px;
+    background-color: #7a6676;
+    position: absolute;
+    top: 548px;
+    left: 1200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+}
+@keyframes jump{
+    50%{
+        top: 100px;
+    }
 }
