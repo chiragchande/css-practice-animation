@@ -1,0 +1,61 @@
+.h1{
+    background-color: #fc9803;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    border-radius: 20px;
+    margin: auto;
+    float: none;
+    position: relative;
+    animation: 3s colorful infinite;
+   /* animation-iteration-count: infinite;*/
+}
+
+@keyframes colorful{
+    0%{
+        background-color: blueviolet;
+        top: 0px;
+    }
+    50%{
+        background-color: #fc9803;
+        top: 10px;
+    }
+    100%{
+        background-color: #90f5ab;
+        top: 0px;
+    }
+}
+.box1{
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    position: relative;
+    top: 50px;
+    left: 90px;
+    text-align: center;
+    padding: 10px;
+    border-radius:50%;
+}
+.box1:hover{
+animation: 0.5s dot ease-in-out infinite alternate;
+}
+@keyframes dot{
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(4);
+    }
+}
+
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: #8fb5f2;
+    position: absolute;
+    top: 150px;
+    left: 180px;
+    text-align: center;
+    padding: 10px;
+}
